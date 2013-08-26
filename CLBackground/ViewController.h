@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic,strong) IBOutlet UIButton *backgroundLocationButton;
+
+- (IBAction)backgroundLocationButtonTapped:(id)sender;
+
 @end

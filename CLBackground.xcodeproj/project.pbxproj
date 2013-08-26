@@ -18,6 +18,10 @@
 		F6F31DEC17CB0927001E2AFC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F31DEB17CB0927001E2AFC /* Default-568h@2x.png */; };
 		F6F31DEF17CB0927001E2AFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F31DEE17CB0927001E2AFC /* ViewController.m */; };
 		F6F31DF217CB0927001E2AFC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F31DF017CB0927001E2AFC /* ViewController.xib */; };
+		F6F31DFB17CB90DF001E2AFC /* NJBaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F31DFA17CB90DF001E2AFC /* NJBaseOperation.m */; };
+		F6F31DFE17CB92E7001E2AFC /* NJQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F31DFD17CB92E7001E2AFC /* NJQueueManager.m */; };
+		F6F31E0117CBAC76001E2AFC /* NJLocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F31E0017CBAC76001E2AFC /* NJLocationOperation.m */; };
+		F6F31E0417CBACA7001E2AFC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F31E0217CBAC99001E2AFC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,13 @@
 		F6F31DED17CB0927001E2AFC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F6F31DEE17CB0927001E2AFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F6F31DF117CB0927001E2AFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F6F31DF917CB90DF001E2AFC /* NJBaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJBaseOperation.h; sourceTree = "<group>"; };
+		F6F31DFA17CB90DF001E2AFC /* NJBaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJBaseOperation.m; sourceTree = "<group>"; };
+		F6F31DFC17CB92E7001E2AFC /* NJQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJQueueManager.h; sourceTree = "<group>"; };
+		F6F31DFD17CB92E7001E2AFC /* NJQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJQueueManager.m; sourceTree = "<group>"; };
+		F6F31DFF17CBAC76001E2AFC /* NJLocationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJLocationOperation.h; sourceTree = "<group>"; };
+		F6F31E0017CBAC76001E2AFC /* NJLocationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJLocationOperation.m; sourceTree = "<group>"; };
+		F6F31E0217CBAC99001E2AFC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F31E0417CBACA7001E2AFC /* CoreLocation.framework in Frameworks */,
 				F6F31DD617CB0927001E2AFC /* UIKit.framework in Frameworks */,
 				F6F31DD817CB0927001E2AFC /* Foundation.framework in Frameworks */,
 				F6F31DDA17CB0927001E2AFC /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +85,7 @@
 		F6F31DD417CB0927001E2AFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6F31E0217CBAC99001E2AFC /* CoreLocation.framework */,
 				F6F31DD517CB0927001E2AFC /* UIKit.framework */,
 				F6F31DD717CB0927001E2AFC /* Foundation.framework */,
 				F6F31DD917CB0927001E2AFC /* CoreGraphics.framework */,
@@ -83,6 +96,7 @@
 		F6F31DDB17CB0927001E2AFC /* CLBackground */ = {
 			isa = PBXGroup;
 			children = (
+				F6F31DF817CB9051001E2AFC /* Model */,
 				F6F31DE417CB0927001E2AFC /* AppDelegate.h */,
 				F6F31DE517CB0927001E2AFC /* AppDelegate.m */,
 				F6F31DED17CB0927001E2AFC /* ViewController.h */,
@@ -105,6 +119,19 @@
 				F6F31DEB17CB0927001E2AFC /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6F31DF817CB9051001E2AFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6F31DFC17CB92E7001E2AFC /* NJQueueManager.h */,
+				F6F31DFD17CB92E7001E2AFC /* NJQueueManager.m */,
+				F6F31DF917CB90DF001E2AFC /* NJBaseOperation.h */,
+				F6F31DFA17CB90DF001E2AFC /* NJBaseOperation.m */,
+				F6F31DFF17CBAC76001E2AFC /* NJLocationOperation.h */,
+				F6F31E0017CBAC76001E2AFC /* NJLocationOperation.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +203,9 @@
 				F6F31DE217CB0927001E2AFC /* main.m in Sources */,
 				F6F31DE617CB0927001E2AFC /* AppDelegate.m in Sources */,
 				F6F31DEF17CB0927001E2AFC /* ViewController.m in Sources */,
+				F6F31DFB17CB90DF001E2AFC /* NJBaseOperation.m in Sources */,
+				F6F31DFE17CB92E7001E2AFC /* NJQueueManager.m in Sources */,
+				F6F31E0117CBAC76001E2AFC /* NJLocationOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
